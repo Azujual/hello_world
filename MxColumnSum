@@ -23,11 +23,23 @@ public class MxColumnSum {
 			mxCount[i] = counter;
 			counter = 0;
 		}
-		
+		System.out.println("");
 		for (int i = 0; i < 5; i++) {
 			System.out.print(mxCount[i] + "\t");
 		}
+		System.out.println("");
+		System.out.println("");
 		
+		counter = mx[0][0];
+		mx[0][0] = mx[0][4];
+		mx[0][4] = counter;
+		
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print(mx[i][j] + "\t");
+			}
+			System.out.println("");
+		}		
 	}
 
 }
