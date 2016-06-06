@@ -1,0 +1,33 @@
+import java.util.Random;
+
+public class MxColumnSum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double[][] mx = new double[5][5];
+		Random rnd = new Random();
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				mx[i][j] = rnd.nextInt(10);
+			}
+		}
+		
+		double[] mxCount = new double[5];
+		double counter = 0;
+		for (int i = 0; i < 5; i++) {
+			for (int j = 0; j < 5; j++) {
+				System.out.print(mx[i][j] + "\t");
+				counter += mx[j][i];
+			}
+			System.out.println("");
+			mxCount[i] = counter;
+			counter = 0;
+		}
+		
+		for (int i = 0; i < 5; i++) {
+			System.out.print(mxCount[i] + "\t");
+		}
+		
+	}
+
+}
