@@ -34,6 +34,11 @@ public class PointMain {
 		System.out.println("Result 3D 2: " + df.format(w2));
 		System.out.println("Result 3D 3: " + df.format(w3));
 		
+		System.out.println("Color Point " + p1.COLOR);
+		System.out.println("Color Point3D " + v1.COLOR);
+		
+		//p1.COLOR = 3;
+		
 	}
 
 }
