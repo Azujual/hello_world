@@ -1,6 +1,8 @@
 
 class Point3D extends Point{
 	int z;
+	final int COLOR = 2;
+	
 	Point3D (int x, int y, int z){
 		super(x,y); //obrashenie k konstruktoru super classa
 		//this.x = x;
